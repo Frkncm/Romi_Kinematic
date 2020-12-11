@@ -1,10 +1,3 @@
-/* ROMI PROJECT
-   University Of Bristol
-   Robotics System
-   Furkan Cam
-   Sn: 2079193
-*/
-
 #include "inc/bsp.h"
 #include "inc/Romi.h"
 #include "inc/pidLib.h"
@@ -135,11 +128,7 @@ void loop() {
           GO_HANDLE macro and the others are defined in the Romi.h file.
           They are used to navigate the flow of control. */
         knm.printVals();
-        /*if (initial) {
-          initial = false;
-          turning_angle = TURN(90);//Turn right
-          BREAK_AND_GO(TURN_ROMI_STATE);
-        }*/
+
         left_motor_speed = M_SPEED;
         right_motor_speed = M_SPEED;
         //knm.resetDistanceFrom();
